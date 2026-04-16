@@ -78,7 +78,7 @@ sequenceDiagram
     alt Phương thức COD
         Ctrl->>3rd: Gửi Email xác nhận (PHPMailer)
         Ctrl-->>User: Chuyển hướng đến trang Thành công
-    else Phương thức Online (VNPAY/MoMo)
+    else Phương thức Online (VNPAY)
         Ctrl->>Ctrl: Tạo mã bảo mật Hash
         Ctrl-->>User: Chuyển hướng sang Cổng thanh toán
         User->>3rd: Thực hiện thanh toán trên App/Web ngân hàng
